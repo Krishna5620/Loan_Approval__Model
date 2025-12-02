@@ -3,7 +3,8 @@
 ```python
 pip install pandas numpy scikit-learn matplotlib seaborn
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/library%20install.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/library%20install.png)
+
 ```python
 import pandas as pd
 import numpy as np
@@ -53,7 +54,7 @@ print("\n--- Data Information (Types and Nulls) ---")
 df.info()
 # ... (rest of the original Step 1)
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/Traing%20logisting%20and%20regression%20model.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/Traing%20logisting%20and%20regression%20model.png)
 
 # Exploratory Data Analysis (EDA)
 
@@ -85,8 +86,8 @@ plt.title('CIBIL Score Distribution by Loan Status')
 plt.show()
 print("Observation: Approved loans have significantly higher CIBIL scores, suggesting this is a primary predictor.")
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/Loan%20status.png)
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/Cibil%20score%20distribution.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/Loan%20status.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/Cibil%20score%20distribution.png)
 # Data Cleaning and Anomaly Correction
 
 ```python
@@ -140,7 +141,7 @@ print("\n--- Preprocessor Setup Complete ---")
 print(f"Numerical Features to scale (including engineered): {all_numerical_features}")
 print(f"Categorical Features to encode: {categorical_features}")
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/pipeline%20processing.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/pipeline%20processing.png)
 
 # Model Training, Evaluation, and Tuning
 
@@ -156,8 +157,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 print(f"\nTraining set size: {X_train.shape[0]} samples")
 print(f"Testing set size: {X_test.shape[0]} samples")
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/Training%20%26%20testing%20set.png)
-
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/Training%20%26%20testing%20set.png)
 # Model Pipelines and Initial Training
 
 ```python
@@ -197,7 +197,7 @@ print("\nRandom Forest Evaluation:")
 print(classification_report(y_test, rf_pred, target_names=['Rejected', 'Approved']))
 print(f"ROC AUC Score: {roc_auc_score(y_test, rf_proba):.4f}")
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/Traing%20logisting%20and%20regression%20model.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/Traing%20logisting%20and%20regression%20model.png)
 
 # Final Model Interpretation and Conclusion
 
@@ -245,9 +245,9 @@ else:
     print("The model is built and evaluated. The Random Forest classifier typically performs better, with CIBIL score, Income, and Loan Amount being the most influential factors in the approval decision.")
 
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/Top%2015%20Feature%20Importances%20from%20Random%20Forest.png)
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/feature%20importance%20for%20loan%20approval.png)
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/conclusion.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/Top%2015%20Feature%20Importances%20from%20Random%20Forest.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/feature%20importance%20for%20loan%20approval.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/conclusion.png)
 
 # Deployment Preparation and Real-World Application
 
@@ -266,7 +266,7 @@ print(f"\nFinal model pipeline saved to: {filename}")
 print("This file contains the Random Forest model and all the necessary preprocessing steps.")
 ```
 
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/New%20Deployment%20model.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/New%20Deployment%20model.png)
 
  # Creating a Prediction Function (Simulation)
 
@@ -301,4 +301,4 @@ print("\n--- Live Prediction Simulation ---")
 print(f"Prediction: {status}")
 print(f"Probability of Approval: {probability:.4f}")
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Loan_Approval_Model/blob/main/Final%20Ouput.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Loan_Approval__Model/blob/main/Final%20Ouput.png)
